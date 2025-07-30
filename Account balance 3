@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc =new Scanner(System.in);
+        int bal=sc.nextInt();
+        
+        int op=sc.nextInt();
+        
+        switch(op){
+            case 1:
+                int dep=sc.nextInt();
+                int sum=bal+dep;
+                System.out.println(sum);
+                break;
+            case 2:
+                int with=sc.nextInt();
+                if(with<bal){
+                   int tot=bal-with;
+                System.out.println(tot);
+                }
+                else{
+                    System.out.println("Insufficient Balance");
+                }
+                break;
+            case 3:
+                System.out.println("Invalid Input");
+                break;
+                   
+                
+        }
+    }
+}
