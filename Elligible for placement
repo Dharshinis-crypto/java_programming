@@ -11,7 +11,7 @@ public class Solution {
         Scanner sc=new Scanner(System.in);
         String s=sc.nextLine();
         int a=sc.nextInt();
-        int cgpa=sc.nextInt();
+        float cgpa=sc.nextFloat();
         if(a==1||a==2 && cgpa>75){
             System.out.println("Name of the Student:"+s);
             System.out.println(s+" is Eligible for Placement");
